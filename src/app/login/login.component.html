@@ -1,4 +1,4 @@
-<div class="english" id="english">
+<div class="signIn" id="signIn">
 <div id="id01" style="display:block" class="modal">
   <p *ngIf="message" class="text-center error">{{message}}</p>
     <form class="modal-content animate" [formGroup]="loginForm" (ngSubmit)="login()">
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="hindi" id="hindi">
+<div class="signUp" id="signUp">
   <div id="id01" style="display:block" class="modal">
     <p *ngIf="message" class="text-center error">{{message}}</p>
       <form class="modal-content animate" [formGroup]="loginForm" (ngSubmit)="login()">
@@ -90,7 +90,7 @@
               <button class="btn btn-success" type="submit">SignUp</button>
               <button class="btn btn-success" (click)="toggleDiv()">Login</button>
             </div>  
-        </div>
+        </div> 
         
         <div class="container" style="background-color:#f1f1f1">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
