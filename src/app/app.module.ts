@@ -9,6 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProgressingComponent } from './progressing/progressing.component';
 import { LoginComponent } from './login/login.component';
+import { DummyComponent } from './dummy/dummy.component';
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     HomepageComponent,
     MainpageComponent,
     ProgressingComponent,
-    LoginComponent
+    LoginComponent,
+    DummyComponent
   ],
   imports: [
     RouterModule.forRoot(
