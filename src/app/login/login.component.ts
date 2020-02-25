@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ILogin } from '../login';
 import { AuthService } from '../auth.service';
-
+import $ from "jquery";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     });
     this.returnUrl = '/mainpage';
     this.authService.logout();
+    
   }
 
   // convenience getter for easy access to form fields
@@ -49,6 +50,12 @@ export class LoginComponent implements OnInit {
         this.message = "Please check your userid and password";
       }
     }    
+}
+toggleDiv() {
+  var englishDiv = $('#english');
+  var hindiDiv = $('#hindi');
+    englishDiv.toggle();
+    hindiDiv.toggle();
 }
 
 }

@@ -118,3 +118,11 @@ input[type=text], input[type=password] {
   #loginDesign{
     display: inline-block;
   }
+
+  .english {
+    display: block;
+  }
+  
+  .hindi {
+    display: none;
+  }
