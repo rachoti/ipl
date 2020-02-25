@@ -1,8 +1,43 @@
-.inputBox{
-    margin: 35px;
-    
-    max-width: 50%;
+
+.img_ipl{
+    width: 80%;
+    margin-left: 14rem;
+    margin-top: 3rem;
+    height: 20rem;
 }
-.center{
-    float: right
+.ipl_text{
+    font: Bold 60px/120px Poppins;
+    letter-spacing: 0;
+    color: #414042;
+    opacity: 1;
+    margin-left: 20rem;
+}
+.content_text{
+    font: Regular 18px/22px Montserrat;
+letter-spacing: 0;
+color: #2F30A8;
+opacity: 1;
+margin-left: 15rem;
+}
+.btn_submit{
+    background-color: #F9DFD5;
+    width: 14rem;
+    height: 3rem;
+    margin-left: 35rem;
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;}
+.submit_text{
+    letter-spacing: 0;
+    color: #414042;
+    opacity: 1;
+    font-size: 20px;
+    padding: 7px 0px 0px 0px;
+
+}
+.fa-arrow-right
+{
+    padding-left: 10px;
+
 }
