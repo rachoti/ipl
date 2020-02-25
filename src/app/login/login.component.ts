@@ -52,8 +52,9 @@ export class LoginComponent implements OnInit {
     }    
 }
 toggleDiv() {
-  var englishDiv = $('#signIn');
-  var hindiDiv = $('#signUp');
+
+  var englishDiv = $('#english');
+  var hindiDiv = $('#hindi');
     englishDiv.toggle();
     hindiDiv.toggle();
 }
