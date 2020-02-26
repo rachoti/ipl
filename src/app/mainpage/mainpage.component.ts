@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+declare var $: any;
 
 @Component({
   selector: 'app-mainpage',
@@ -13,6 +14,21 @@ export class MainpageComponent implements OnInit {
   constructor(private router: Router,public authService: AuthService) { }
 
   ngOnInit() {
+    $('#button').on('click', () => {
+      $('#button').text('Coming soon!')
+    })
+
+    $('#button2').on('click', () => {
+      $('#button2').text('Coming soon!')
+    })
+    var $item = $('.full_page'); 
+
+    var $wHeight = $(window).height();
+    $(window).on('resize', function (){
+      $wHeight = $(window).height();
+      $item.height($wHeight);
+
+    }); 
     console.log(localStorage.getItem('token'));
   }
   onClickSubmit(){
