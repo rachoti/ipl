@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
 declare var $: any;
 
@@ -11,7 +10,7 @@ declare var $: any;
 })
 export class MainpageComponent implements OnInit {
   message="";
-  constructor(private router: Router,public authService: AuthService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     $('#button').on('click', () => {
@@ -36,9 +35,5 @@ export class MainpageComponent implements OnInit {
   //  }
     
   }
-  logout(): void {
-    console.log("Logout");
-    this.authService.logout();
-    this.router.navigate(['/login']);
-  }
+  
 }

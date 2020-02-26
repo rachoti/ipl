@@ -4,25 +4,20 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthGuard } from './auth.guard';
-import { HomepageComponent } from './homepage/homepage.component';
+
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { ProgressingComponent } from './progressing/progressing.component';
-import { LoginComponent } from './login/login.component';
+
 const appRoutes: Routes = [
-  { path: '',   redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
+  { path: '',   redirectTo: '/mainpage', pathMatch: 'full' },
+ 
   { path: 'mainpage', component: MainpageComponent},
-  { path: 'homepage', component: HomepageComponent  },
-  { path: 'progressing', component: ProgressingComponent }
+
   ];
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
     MainpageComponent,
-    ProgressingComponent,
-    LoginComponent,
+      
     
   ],
   imports: [
@@ -36,7 +31,7 @@ const appRoutes: Routes = [
     RouterModule,
     ReactiveFormsModule
   ],
-  providers: [AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

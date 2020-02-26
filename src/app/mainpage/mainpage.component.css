@@ -57,6 +57,13 @@
     border-radius: 2rem;
 }
 
+.btn-default {
+    background: #5557F0;
+    color: white;
+    border-radius: 15px;
+    margin-right: 2rem;
+}
+
 .btn_track {
     background-color: #F9DFD5;
     width: 15rem;
@@ -66,6 +73,16 @@
     outline: none;
     border: none;
     border-radius: 2rem;
+}
+
+.alpha {
+    list-style-type: lower-alpha;
+}
+
+.close {
+    margin-right: 1rem;
+    /* margin-left: -13rem; */
+    margin-top: 1px;
 }
 
 .submit_text {
@@ -78,6 +95,27 @@
 
 .fa-arrow-right {
     padding-left: 10px;
+}
+
+.track_img {
+    float: right;
+    width: 8%;
+    /* padding: 4px 0px 1px -5px; */
+    margin-top: 3%;
+}
+
+.modal-dialog .modal-content {
+    width: 45rem;
+    margin-left: -6rem;
+    border: 0;
+    height: -webkit-fill-available;
+    border-radius: 55px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-body {
+    overflow-y: scroll;
 }
 
 
